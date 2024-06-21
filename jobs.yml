@@ -24,7 +24,7 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-        repo_name: backend
+        repo_name: Backend
 
     - name : Create Jenkins Jobs - Expense Parameters
       community.general.jenkins_job:
