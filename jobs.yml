@@ -16,7 +16,7 @@
       vars:
          repo_name: frontend
 
-    - name : Create Jenkins Jobs - Backend
+    - name : Create Jenkins Jobs - backend
       community.general.jenkins_job:
         config: "{{ lookup('template', 'job.xml') }}"
         name: backend
