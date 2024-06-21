@@ -19,12 +19,12 @@
     - name : Create Jenkins Jobs - Backend
       community.general.jenkins_job:
         config: "{{ lookup('template', 'job.xml') }}"
-        name: Backend
+        name: backend
         password: "{{jenkins_password}}"
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-        repo_name: Backend
+        repo_name: backend
 
     - name : Create Jenkins Jobs - Expense Parameters
       community.general.jenkins_job:
