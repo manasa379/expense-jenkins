@@ -1,5 +1,5 @@
 - name : Ansible Jobs Create
-  hosts : all
+  hosts : localhost
   vars:
     jenkins_url: http://172.31.37.113:8080
     jenkins_user: admin
