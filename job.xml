@@ -1,9 +1,10 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@1415.v4f9c9131248b_">
-    <actions>
+    <actions/>
     <description></description>
     <keepDependencies>false</keepDependencies>
-    <properties/>
+    {% if {{auto_trigger}} %}
+    <properties>
         <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
              <triggers>
                   <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger@2.2.1">
@@ -23,6 +24,9 @@
              </triggers>
         </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
     </properties>
+    {% else %}
+    <properties/>
+    {% endif %}
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3894.3896.vca_2c931e7935">
         <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.2">
             <configVersion>2</configVersion>
