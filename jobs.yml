@@ -14,7 +14,7 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-         repo_name: frontend
+         repo_name: Frontend
          auto_trigger: "true"
 
     - name : Create Jenkins Jobs - Backend
