@@ -44,7 +44,7 @@
             <submoduleCfg class="empty-list"/>
             <extensions/>
         </scm>
-        <scriptPath>{{ file_name }}</scriptPath>
+        <scriptPath>{{file_name}}</scriptPath>
         <lightweight>true</lightweight>
     </definition>
     <triggers/>
