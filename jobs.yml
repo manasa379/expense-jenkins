@@ -62,4 +62,4 @@
       vars:
         repo_name: jenkins-Mutable
         auto_trigger: "false"
-        file_name:   jenkinsfile-Mutable
+        file_name:   Jenkinsfile-Mutable
