@@ -49,7 +49,7 @@
       vars:
         repo_name: Expense-terraform
         auto_trigger: "false"
-        file_name:   jenkinsfile
+        file_name:   Jenkinsfile
 
     - name: Create Jenkins Jobs - Mutable-Deployment
       community.general.jenkins_job:
