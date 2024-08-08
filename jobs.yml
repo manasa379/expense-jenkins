@@ -60,6 +60,6 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-        repo_name: jenkins-Mutable
+        repo_name: infra-ansible
         auto_trigger: "false"
         file_name:   jenkins-Mutable
