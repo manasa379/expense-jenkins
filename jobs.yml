@@ -38,6 +38,7 @@
       vars:
         repo_name: expense-parameters
         auto_trigger: "false"
+        file_name:   Jenkinsfile
 
     - name : Create Jenkins Jobs - Expense Terraform
       community.general.jenkins_job:
